@@ -104,7 +104,7 @@ int main()
             }
         }
 
-        if ((temp < '0' || temp > '9') && temp != '-' && temp != ' ')
+        if ((temp < '0' || temp > '9') && temp != '-' && temp != ' ' && temp != '\n')
         {
             // we shrink size by 2, 1 for this char and another because if size
             size--;
@@ -112,7 +112,7 @@ int main()
         }
 
         // end of number
-        if (temp == ' ')
+        if (temp == ' ' || temp == '\n')
         {
             ++size;
             nums[size] = 0;
@@ -142,7 +142,7 @@ int main()
         }
 
         temp = fgetc(stdin);
-    } while (temp != '\n');
+    } while (1 == 1);
 
     // we didnt grow size for last number
     ++size;
