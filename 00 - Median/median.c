@@ -4,8 +4,6 @@
 * Author: Gershon Levy
 -------------------------------------------------------*/
 
-// note that i considered \n to be a non number char
-
 #include <stdio.h>
 #include <stdlib.h>
 
